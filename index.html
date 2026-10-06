@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PédiaGames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Pédia<span>Games</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#" onclick="mostrarInfo('Jogos Disponíveis', '📚 Jogos catalogados na enciclopédia:\n\n• The Sims 4\n• GrandChase\n• The Elder Scrolls V: Skyrim Special Edition\n• Grand Theft Auto V Enhanced')">Jogos</a></li>
+                <li><a href="#" onclick="mostrarInfo('Sobre o PédiaGames', 'O PédiaGames é uma enciclopédia digital desenvolvida para entusiastas de PC Windows. Nosso objetivo é catalogar informações essenciais, histórias e resumos rápidos dos melhores jogos de computador, servindo como um guia prático e acessível.')">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+
+        <!-- Destaque -->
+       <div class="destaque">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/4c8d7ce5142a528bdac68c093bd1bcc720e2baee/capsule_616x353.jpg?t=1781187782" alt="Cyber Knight">
+    <div class="destaque-info">
+        <h2>Destaque da Semana: Grand Theft Auto V Enhanced</h2>
+        <p>Conheça a história e o clássico no seu PC Windows.</p>
+     <button onclick="mostrarInfo('Grand Theft Auto V Enhanced', 'Grand Theft Auto V no PC é a versão definitiva e tecnicamente mais avançada do clássico da Rockstar Games. Focado na experiência completa de mundo aberto, o título oferece gráficos em altíssima resolução, taxa de quadros desbloqueada, suporte a monitores ultrawide, resoluções em até 4K e uma vasta gama de configurações gráficas avançadas para personalização. O jogo brilha fortemente no aspecto online através do GTA Online, um mundo dinâmico e multijogador em constante evolução. Nele, você pode construir seu próprio império criminoso, participar de golpes elaborados (heists), corridas e eventos junto com amigos, com servidores que suportam comunidades ativas, conteúdos atualizados regularmente e suporte completo a mods na campanha solo para enriquecer ainda mais a experiência.')">Ler Resumo</button>
+     <a href="https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/" target="_blank" class="btn-steam">Comprar na Steam</a>
+    </div>
+</div>
+        </div>
+
+        <!-- Pesquisa -->
+        <div class="filtros">
+            <input type="text" id="pesquisa" placeholder="Pesquisar jogo na enciclopédia..." onkeyup="filtrarJogos()">
+        </div>
+
+        <!-- Lista de Jogo
+         <!-- Lista de Jogos (Apenas PC Windows) -->
+        <h3>Jogos para PC Windows</h3>
+        <div class="grid-jogos" id="listaJogos">
+            
+           <!-- Card 1 -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg?t=1790028362" alt="The sims 4">
+                <div class="card-body">
+                    <h4>The Sims 4</h4>
+                    <div class="categoria">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Simulador de vida real, Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras. Seja poderoso e livre, divirta-se e jogue com a vida!</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('The Sims 4', 'The Sims 4 é o quarto título da aclamada franquia de simuladores de vida desenvolvida pela Maxis e publicada pela Electronic Arts (EA). Lançado originalmente para PC, o jogo redefine a experiência de criar e controlar pessoas virtuais, conhecidas como Sims, em um mundo aberto a escolhas, criatividade e personalização.')">Ver Resumo</button>
+<!-- Botão de Avaliações específico do The Sims 4 -->
+                        <button class="btn-info" onclick="mostrarInfo('The sims 4 - Avaliações', '⭐ Nota da Crítica: 4.3 de 5 estrelas (⭐⭐⭐⭐☆).\n\n💬 Análise:\n O simulador merece 5 estrelas em criatividade e ferramentas de criação, mas cai para 3 estrelas ou menos no quesito custo-benefício e estabilidade técnica')">Ver Críticas</button>
+                       
+                     <a href="https://store.steampowered.com/app/1222670/The_Sims_4/" target="_blank" class="btn-steam">Gratuito na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/985810/c6dff0803e0d9a9b2a415cd40c4cfa3bd846d091/header.jpg?t=1786514946" alt="GrandChase">
+                <div class="card-body">
+                    <h4>GrandChase</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Grand Chase é um jogo online de RPG de ação em plataforma gratuito com gráficos inspirados em anime. Divirta-se com aventuras empolgantes em missões e PvP com personagens únicos.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('GrandChase', 'Grand Chase (atualmente relançado como Grand Chase Classic) é um jogo online gratuito no estilo ação RPG de plataforma 2D (side-scrolling) com gráficos inspirados em anime, desenvolvido pela empresa sul-coreana KOG. O jogo marcou gerações e conquistou uma legião enorme de fãs ao redor do mundo, especialmente no Brasil.')">Ver Resumo</button>
+                       <!-- Botão de Avaliações específico do GrandChase -->
+                        <button class="btn-info" onclick="mostrarInfo('Grandchase- Avaliações', '⭐ Nota da Crítica:  3.4 de 5 estrelas (⭐⭐⭐☆☆).\n\n💬 Análise:\n  O jogo merece 5 estrelas como uma viagem no tempo para quem quer matar a saudade dos velhos tempos, mas cai para 2 estrelas na opinião de quem busca um RPG equilibrado, moderno e que respeite o tempo e o bolso do jogador \'\'')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/985810/GrandChase/" target="_blank" class="btn-steam">Gratuito na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247" alt="Skyrim">
+                <div class="card-body">
+                    <h4>The Elder Scrolls V: Skyrim Special Edition</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Vencedor de mais de 200 prêmios de Jogo do Ano, The Elder Scrolls V: Skyrim Special Edition dá vida à fantasia épica com um nível de detalhe espantoso. A Special Edition inclui o jogo aclamado pela crítica e suplementos com novas funcionalidades.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('The Elder Scrolls V: Skyrim Special Edition', 'The Elder Scrolls V: Skyrim Special Edition é a versão remasterizada e definitiva do aclamado RPG de mundo aberto da Bethesda, ambientada na gélida província de Skyrim. Na pele do Dragonborn, o único capaz de deter o retorno do dragão ancestral Alduin, você explora livremente um vasto território tomado por uma guerra civil, desenvolvendo seu próprio estilo de combate — seja com espadas, arcos ou magias. Esta edição aprimorada reúne gráficos totalmente remodelados, todos os três DLCs oficiais (Dawnguard, Hearthfire e Dragonborn) e suporte completo a mods na versão de PC, elevando a imersão e a liberdade de escolha a um patamar lendário.')">Ver Resumo</button>
+                        <!-- Botão de Avaliações específico do Skyrim -->
+                        <button class="btn-info" onclick="mostrarInfo('Skyrim - Avaliações', '⭐ Nota da Crítica: 4.6 de 5 estrelas (⭐⭐⭐⭐⭐).\n\n💬 Análise:\n O jogo merece 5 estrelas indiscutíveis pelo conteúdo, longevidade infinita e impacto no mundo dos games, mas cai para 3.5 estrelas no quesito \'polimento técnico e suporte oficial aos países que falam português.\'')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/?l=portuguese" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 WikiGames - Projeto Acadêmico para PC Windows.</p>
+    </footer>
+    <!-- Modal Informativo -->
+    <div class="modal" id="modalWiki">
+        <div class="modal-conteudo">
+            <h3 id="tituloModal">Título do Jogo</h3>
+            <p id="textoModal">Informações detalhadas...</p>
+            <button class="fechar-modal" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

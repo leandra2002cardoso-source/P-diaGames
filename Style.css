@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: #c7d5e0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #171a21;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #2a475e;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #66c0f4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #c7d5e0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Banner de Destaque */
+.destaque {
+    background: linear-gradient(to right, #2a475e, #1b2838);
+    border: 1px solid #3d6485;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.destaque img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #66c0f4;
+}
+
+.destaque-info h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.destaque-info p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Campo de Pesquisa */
+.filtros {
+    margin-bottom: 20px;
+}
+
+.filtros input {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a475e;
+    border: 1px solid #417a9b;
+    color: white;
+    border-radius: 3px;
+}
+
+/* Grade de Cards */
+h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #2a475e;
+    padding-bottom: 5px;
+}
+
+.grid-jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-jogo {
+    background-color: #16202d;
+    border: 1px solid #2a475e;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-jogo:hover {
+    transform: scale(1.03);
+    border-color: #66c0f4;
+}
+
+.card-jogo img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-body h4 {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.categoria {
+    font-size: 11px;
+    color: #66c0f4;
+}
+
+.descricao-curta {
+    font-size: 13px;
+    color: #8f98a0;
+    margin-bottom: 5px;
+}
+
+/* Botões do Card */
+.botoes-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.btn-info {
+    background: #2a475e;
+    border: none;
+    color: white;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-info:hover {
+    background: #3d6485;
+}
+
+.btn-steam {
+    background: linear-gradient(to bottom, #799905 5%, #536703 100%);
+    border: none;
+    color: white;
+    padding: 6px;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-steam:hover {
+    background: linear-gradient(to bottom, #8fae08 5%, #607904 100%);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #171a21;
+    color: #567086;
+    font-size: 12px;
+    border-top: 1px solid #2a475e;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: #2a475e;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: left;
+    width: 400px;
+    border: 1px solid #66c0f4;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-conteudo h3 {
+    color: #ffffff;
+    border-bottom: 1px solid #417a9b;
+    padding-bottom: 5px;
+}
+
+.modal-conteudo p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #c7d5e0;
+}
+
+.fechar-modal {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    align-self: flex-end;
+}
