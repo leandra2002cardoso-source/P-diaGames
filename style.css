@@ -249,3 +249,38 @@ footer {
     font-size: 12px;
     align-self: flex-end;
 }
+/* Torna a grade de jogos responsiva automaticamente */
+.grid-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ajustes visuais para ecrãs de telemóveis (abaixo de 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-jogo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .botoes-card {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .botoes-card button, 
+    .botoes-card a {
+        width: 100%;
+    }
+}

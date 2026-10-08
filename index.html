@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+   <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PédiaGames</title>
@@ -38,67 +39,239 @@
         <div class="filtros">
             <input type="text" id="pesquisa" placeholder="Pesquisar jogo na enciclopédia..." onkeyup="filtrarJogos()">
         </div>
-
-        <!-- Lista de Jogo
-         <!-- Lista de Jogos (Apenas PC Windows) -->
+<!-- Lista de Jogos (Apenas PC Windows) -->
         <h3>Jogos para PC Windows</h3>
         <div class="grid-jogos" id="listaJogos">
             
-           <!-- Card 1 -->
+            <!-- Card 1: The Sims 4 -->
             <div class="card-jogo">
                 <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222670/header.jpg?t=1790028362" alt="The sims 4">
                 <div class="card-body">
                     <h4>The Sims 4</h4>
                     <div class="categoria">Plataforma: PC Windows</div>
-                    <p class="descricao-curta">Simulador de vida real, Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras. Seja poderoso e livre, divirta-se e jogue com a vida!</p>
+                    <p class="descricao-curta">Simulador de vida real, Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras.</p>
                     <div class="botoes-card">
-                        <button class="btn-info" onclick="mostrarInfo('The Sims 4', 'The Sims 4 é o quarto título da aclamada franquia de simuladores de vida desenvolvida pela Maxis e publicada pela Electronic Arts (EA). Lançado originalmente para PC, o jogo redefine a experiência de criar e controlar pessoas virtuais, conhecidas como Sims, em um mundo aberto a escolhas, criatividade e personalização.')">Ver Resumo</button>
-<!-- Botão de Avaliações específico do The Sims 4 -->
-                        <button class="btn-info" onclick="mostrarInfo('The sims 4 - Avaliações', '⭐ Nota da Crítica: 4.3 de 5 estrelas (⭐⭐⭐⭐☆).\n\n💬 Análise:\n O simulador merece 5 estrelas em criatividade e ferramentas de criação, mas cai para 3 estrelas ou menos no quesito custo-benefício e estabilidade técnica')">Ver Críticas</button>
-                       
-                     <a href="https://store.steampowered.com/app/1222670/The_Sims_4/" target="_blank" class="btn-steam">Gratuito na Steam</a>
+                        <button class="btn-info" onclick="mostrarInfo('The Sims 4', 'Desenvolvido pela Maxis e publicado pela Electronic Arts (EA), The Sims 4 redefine a experiência clássica de simulação de vida. O jogo permite personalizar detalhadamente a aparência, a personalidade e as aspirações de avanço dos Sims, construindo casas espetaculares e controlando o dia a dia, as carreiras, os romances e as amizades das personagens num ambiente repleto de liberdade criativa.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('The Sims 4 - Avaliações', '⭐ Nota da Crítica: 4.3 de 5 estrelas (⭐⭐⭐⭐☆). O simulador destaca-se pelas excelentes ferramentas de criação e criatividade ilimitada, embora perca alguns pontos no quesito de custo-benefício devido à grande quantidade de expansões e na estabilidade técnica ao longo do tempo. ')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1222670/The_Sims_4/" target="_blank" class="btn-steam">Gratuito na Steam</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="card-jogo"!>
+            <!-- Card 2: GrandChase -->
+            <div class="card-jogo">
                 <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/985810/c6dff0803e0d9a9b2a415cd40c4cfa3bd846d091/header.jpg?t=1786514946" alt="GrandChase">
                 <div class="card-body">
                     <h4>GrandChase</h4>
                     <div class="categoria-plataforma">Plataforma: PC Windows</div> 
-                    <p class="descricao-curta">Grand Chase é um jogo online de RPG de ação em plataforma gratuito com gráficos inspirados em anime. Divirta-se com aventuras empolgantes em missões e PvP com personagens únicos.</p>
+                    <p class="descricao-curta">Jogo online de RPG de ação em plataforma gratuito com gráficos inspirados em anime.</p>
                     <div class="botoes-card">
-                        <button class="btn-info" onclick="mostrarInfo('GrandChase', 'Grand Chase (atualmente relançado como Grand Chase Classic) é um jogo online gratuito no estilo ação RPG de plataforma 2D (side-scrolling) com gráficos inspirados em anime, desenvolvido pela empresa sul-coreana KOG. O jogo marcou gerações e conquistou uma legião enorme de fãs ao redor do mundo, especialmente no Brasil.')">Ver Resumo</button>
-                       <!-- Botão de Avaliações específico do GrandChase -->
-                        <button class="btn-info" onclick="mostrarInfo('Grandchase- Avaliações', '⭐ Nota da Crítica:  3.3 de 5 estrelas (⭐⭐⭐☆☆).\n\n💬 Análise:\n  O jogo merece 5 estrelas como uma viagem no tempo para quem quer matar a saudade dos velhos tempos, mas cai para 2 estrelas na opinião de quem busca um RPG equilibrado, moderno e que respeite o tempo e o bolso do jogador \n \n \'\'')">Ver Críticas</button>
+                        <button class="btn-info" onclick="mostrarInfo('GrandChase', 'Desenvolvido pela empresa sul-coreana KOG (atualmente relançado como Grand Chase Classic), GrandChase é um jogo online de grande sucesso que marcou gerações de jogadores, especialmente no Brasil. O título combina combates dinâmicos de ação em estilo plataforma com progressão de RPG, permitindo escolher entre uma enorme variedade de heróis com habilidades exclusivas para enfrentar missões desafiadoras e duelos de PvP.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Grandchase - Avaliações', '⭐ Nota da Crítica: 3.3 de 5 estrelas (⭐⭐⭐☆☆).   Análise: O jogo brilha intensamente como uma excelente viagem no tempo para quem quer matar saudades dos velhos tempos e reencontrar velhos amigos, mas perde alguns pontos na opinião de quem procura um RPG moderno, equilibrado e que respeite o tempo e o investimento do jogador.   ')">Ver Críticas</button>
                         <a href="https://store.steampowered.com/app/985810/GrandChase/" target="_blank" class="btn-steam">Gratuito na Steam</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3 -->
+            <!-- Card 3: Skyrim Special Edition -->
             <div class="card-jogo">
                 <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247" alt="Skyrim">
                 <div class="card-body">
                     <h4>The Elder Scrolls V: Skyrim Special Edition</h4>
                     <div class="categoria-plataforma">Plataforma: PC Windows</div>
-                    <p class="descricao-curta">Vencedor de mais de 200 prêmios de Jogo do Ano, The Elder Scrolls V: Skyrim Special Edition dá vida à fantasia épica com um nível de detalhe espantoso. A Special Edition inclui o jogo aclamado pela crítica e suplementos com novas funcionalidades.</p>
+                    <p class="descricao-curta">Vencedor de mais de 200 prêmios de Jogo do Ano, Skyrim Special Edition dá vida à fantasia épica.</p>
                     <div class="botoes-card">
-                        <button class="btn-info" onclick="mostrarInfo('The Elder Scrolls V: Skyrim Special Edition', 'The Elder Scrolls V: Skyrim Special Edition é a versão remasterizada e definitiva do aclamado RPG de mundo aberto da Bethesda, ambientada na gélida província de Skyrim. Na pele do Dragonborn, o único capaz de deter o retorno do dragão ancestral Alduin, você explora livremente um vasto território tomado por uma guerra civil, desenvolvendo seu próprio estilo de combate — seja com espadas, arcos ou magias. Esta edição aprimorada reúne gráficos totalmente remodelados, todos os três DLCs oficiais (Dawnguard, Hearthfire e Dragonborn) e suporte completo a mods na versão de PC, elevando a imersão e a liberdade de escolha a um patamar lendário.')">Ver Resumo</button>
-                        <!-- Botão de Avaliações específico do Skyrim -->
-                        <button class="btn-info" onclick="mostrarInfo('Skyrim - Avaliações', '⭐ Nota da Crítica: 4.6 de 5 estrelas (⭐⭐⭐⭐⭐).\n\n💬 Análise:\n O jogo merece 5 estrelas indiscutíveis pelo conteúdo, longevidade infinita e impacto no mundo dos games, mas cai para 3.5 estrelas no quesito \'polimento técnico e suporte oficial aos países que falam português.\'')">Ver Críticas</button>
+                        <button class="btn-info" onclick="mostrarInfo('Skyrim', 'Desenvolvido pela Bethesda Game Studios, The Elder Scrolls V: Skyrim Special Edition coloca o jogador na pele do Dragonborn (o Dovahkiin), o único capaz de deter o retorno do dragão ancestral Alduin. Explora-se livremente um vasto território tomado por uma guerra civil, desenvolvendo o seu próprio estilo de combate — seja com espadas, arcos ou magias. Esta edição aprimorada reúne gráficos totalmente remodelados, todos os três DLCs oficiais (Dawnguard, Hearthfire e Dragonborn) e suporte completo a mods na versão de PC, elevando a imersão e a liberdade de escolha a um patamar lendário.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Skyrim - Avaliações', '⭐ Nota da Crítica: 4.6 de 5 estrelas (⭐⭐⭐⭐⭐).   Análise: O jogo merece 5 estrelas indiscutíveis pelo conteúdo, longevidade infinita e impacto histórico no mundo dos videojogos, mas cai para 3.5 estrelas no quesito do polimento técnico e do suporte oficial aos idiomas locais.  ')">Ver Críticas</button>
                         <a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/?l=portuguese" target="_blank" class="btn-steam">Comprar na Steam</a>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <!-- Card 4: Miside -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2527500/capsule_616x353.jpg?t=1781766453" alt="Miside">
+                <div class="card-body">
+                    <h4>MiSide</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Vamos imaginar que você tem um jogo no qual cuida de um personagem. Mas você conseguiria imaginar entrar nesse jogo algum dia?</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Miside', 'Desenvolvido pelo estúdio indie AIHASTO, MiSide começa de forma leve e acolhedora: o protagonista baixa um jogo de celular onde interage, joga minigames e realiza tarefas cotidianas com sua namorada virtual, uma personagem de anime chamada Mita. No entanto, após avançar nos dias virtuais, a realidade se distorce e o jogador é inexplicavelmente puxado para dentro do mundo 3D do jogo, encontrando Mita cara a cara. O que parecia um simulador aconchegante evolui rapidamente para uma narrativa metaficcional de terror, onde a obsessão da personagem se revela mortal, revelando diferentes versões/clones de Mita, segredos sombrios e uma atmosfera claustrofóbica que mistura visuais fofos em estilo anime com cenas chocantes de suspense e horror.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Miside - Avaliações', '⭐ Nota da Crítica: 4.6 de 5 estrelas (⭐⭐⭐⭐⭐). Os críticos destacam que o jogo merece pontuação máxima pela originalidade, atmosfera imersiva e por subverter perfeitamente o gênero de simuladores fofos em uma experiência de terror psicológico inesquecível, caindo muito pouco apenas em termos de duração por ser uma experiência mais direta.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/2527500/MiSide/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
 
-    </div>
+            <!-- Card 5: Elden Ring -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1655227702" alt="Elden Ring">
+                <div class="card-body">
+                    <h4>Elden Ring</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Aventura completa de mundo aberto adaptada inteiramente para a realidade virtual.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Elden Ring', 'Ambientado nas Terras Intermédias, o jogo segue a jornada do Maculado, um exilado que retorna após a fragmentação do Anel Prístino (Elden Ring) e o desaparecimento da rainha Marika. O objetivo do jogador é explorar um vasto mundo aberto interconectado, derrotar os poderosos semideuses que corromperam os pedaços do anel (as Grandes Runas), consertar o artefato e ascender como o novo Lorde Prístino. É amplamente aclamado pela sua liberdade de exploração incomparável, combate desafiador e uma rica construção de mundo de fantasia sombria.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Elden Ring - Avaliações', '⭐ Nota da Crítica: 4.8 de 5 estrelas (⭐⭐⭐⭐⭐). Os críticos elogiam a jogabilidade, a narrativa e a qualidade geral do jogo.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1245620/Elden_Ring/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: terraria -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1716301389" alt="Terraria">
+                <div class="card-body">
+                    <h4>Terraria</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">RPG de ação em mundo aberto onde os jogadores exploram, mineiram, combatem e constroem.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Terraria', 'Desenvolvido pelo Re-Logic, Terraria coloca o jogador em um vasto mundo gerado proceduralmente, onde tudo pode ser minerado, construído e moldado. Começando apenas com ferramentas básicas, você deve coletar recursos cavando nas profundezas da terra, construir abrigos para atrair NPCs úteis, forjar armaduras poderosas e fabricar armas mágicas ou de longo alcance. O jogo vai muito além de uma simples construção de blocos, contando com uma progressão profunda focada em exploração de biomas perigosos, masmorras misteriosas e uma imensa variedade de chefes épicos que testam as habilidades do jogador.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Terraria - Avaliações', '⭐ Nota da Crítica: 4.5 de 5 estrelas.Uma obra-prima do gênero sandbox que oferece centenas de horas de conteúdo altamente viciante e atualizações constantes, embora o começo possa parecer um pouco complexo para jogadores que estão a dar os primeiros passos no estilo de sobrevivência e exploração.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Palworld -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1790336367" alt="Palworld">
+                <div class="card-body">
+                    <h4>Palworld</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Jogo de aventura e construção em um mundo aberto com criaturas mágicas.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Palworld', 'Desenvolvido pela Pocketpair, Palworld combina mecânicas de sobrevivência e exploração com a captura de criaturas. No jogo, você explora um vasto mundo aberto onde pode construir bases, cultivar alimentos, automatizar linhas de produção com a ajuda dos seus Pals e enfrentar chefes desafiadores. Embora as criaturas conhecidas popularmente como Pals possam ser usadas para trabalho braçal, agricultura ou combate, o jogo também permite o uso de armas de fogo e táticas de sobrevivência mais intensas, criando uma mistura única e viciante de exploração e gestão.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Palworld - Avaliações', '⭐ Nota da Crítica: 4.2 de 5 estrelas (⭐⭐⭐⭐☆)4.2 de 5 estrelas (⭐⭐⭐⭐☆). O jogo merece nota alta pela diversão imediata, criatividade na mistura de gêneros e pelo excelente fator multijogador com amigos, mas perde alguns pontos devido a bugs de lançamento e à necessidade de mais polimento em algumas mecânicas de desempenho no mundo aberto.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Raft -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/648800/capsule_616x353.jpg?t=1727184011" alt="Raft">
+                <div class="card-body">
+                    <h4>Raft</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Jogo de sobrevivência em um ambiente aquático onde você precisa construir e manter sua própria plataforma.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Raft', 'Desenvolvido pela Redbeet Interactive, Raft joga o utilizador (sozinho ou em modo cooperativo com amigos) no meio de um oceano infinito, armado apenas com um pequeno gancho de plástico. O objetivo inicial é puxar detritos que flutuam na água para expandir a jangada, criar ferramentas de sobrevivência, purificar água e cozinhar alimentos, enquanto se desvia de um tubarão persistente. À medida que avança, a experiência expande-se para a exploração de ilhas desertas, recifes subaquáticos e ilhas maiores que contêm uma narrativa rica sobre o mistério do mundo, permitindo construir uma verdadeira fortaleza flutuante.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Raft - Avaliações', '⭐ Nota da Crítica: 4.4 de 5 estrelas (⭐⭐⭐⭐☆). O jogo merece grande destaque pela excelente diversão em modo cooperativo, mecânicas de construção viciantes e uma progressão de exploração muito gratificante, embora perca alguns pontos na variedade repetitiva de recolha de recursos nas fases iniciais e em pequenos detalhes de otimização.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/648800/Raft/?l=brazilian" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9: The Sims Medieval -->
+            <div class="card-jogo">
+                <img src="https://storefront.steampowered.com/v/gfx/apps/102820/capsule_467x181.jpg" alt="The Sims Medieval">
+                <div class="card-body">
+                    <h4>The Sims Medieval</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Jogo de simulação onde você controla personagens em um mundo medieval.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('The Sims Medieval', 'Desenvolvido pela Maxis e lançado pela Electronic Arts, The Sims Medieval afasta-se do tradicional simulador de vida livre e adopta uma estrutura baseada em objectivos e missões. O jogador constrói e governa o seu próprio reino a partir do zero, criando personagens heróis com profissões específicas da época — como monarcas, cavaleiros, magos, ferreiros, bardos, sacerdotes e médicos. Cada herói tem responsabilidades diárias e deve completar missões para expandir o reino, desbloquear novas áreas e cumprir o destino ambicionado para a sua coroa, misturando a gestão de simulação clássica com elementos leves de RPG medieval.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('The Sims Medieval - Avaliações', '⭐ Nota da Crítica: 4.3 de 5 estrelas (⭐⭐⭐⭐☆). O jogo brilha pela originalidade, carisma e pela forma divertida como adapta a mecânica dos Sims para um contexto histórico de fantasia e aventura, embora perca alguns pontos na longevidade devido à repetição de certas missões e à menor liberdade de construção livre em comparação com os jogos principais da série.')">Ver Críticas</button>
+                        <a href="https://knysims.com.br/tag/the-sims-medieval" target="_blank" class="btn-steam">Gratuito na Kny Sims</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10: Super Auto Pets -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1714040/header.jpg?t=1680944541" alt="Super Auto Pets">
+                <div class="card-body">
+                    <h4>Super Auto Pets</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Um jogo de simulação onde você pode criar e treinar seus próprios animais de estimação.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Super Auto Pets', 'Desenvolvido pela Team Wood Games, Super Auto Pets é um jogo de estratégia viciante onde o jogador monta uma equipa de animais de estimação adoráveis (como cães, gatos, castores e dragões), cada um com habilidades e sinergias especiais em combate. O objetivo é vencer batalhas automáticas contra equipes de outros jogadores. Entre cada ronda, gasta-se ouro na loja para comprar novos animais, subir o nível dos favoritos ou comprar comida para aumentar os seus atributos. O jogo destaca-se pela sua estética minimalista e charmosa, partidas rápidas e uma profundidade tática enorme na escolha das combinações certas para vencer sem precisar de microgerenciar os combates em tempo real.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Super Auto Pets - Avaliações', '⭐ Nota da Crítica: 4.5 de 5 estrelas (⭐⭐⭐⭐⭐). O jogo merece nota máxima pela sua jogabilidade extremamente viciante, acessibilidade e diversão sem complicações, perdendo apenas alguns pontos mínimos na falta de variedade visual mais complexa para quem prefere gráficos altamente detalhados.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1714040/Super_Auto_Pets/" target="_blank" class="btn-steam">Gratuito na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11: Delta Force -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507950/06b85957d9c4c2a199841a2bf16afcb640199746/header_alt_assets_14_brazilian.jpg?t=1790238079" alt="Delta Force">
+                <div class="card-body">
+                    <h4>Delta Force</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Jogue gratuitamente um jogo de extração baseado em operatores e guerra de armas combinadas em grande escala. Torne-se um Operador de Elite, personalize um arsenal em constante expansão e mobilize-se para missões repletas de emoção em vários modos..</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Delta Force', 'Desenvolvido pela Team Jade (TiMi Studio Group), Delta Force (também conhecido como Delta Force: Hawk Ops) revitaliza a clássica franquia de tiros táticos. O jogo divide-se em duas experiências principais: uma campanha narrativa baseada em operações especiais realistas (incluindo a recriação do clássico filme Black Hawk Down) e um modo multijogador massivo de guerra tática com combates veiculares em grande escala, onde operadores com habilidades especializadas colaboram em equipa para dominar o campo de batalha com gráficos modernos de última geração.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Delta Force - Avaliações', '⭐ Nota da Crítica: 4.1 de 5 estrelas (⭐⭐⭐⭐☆). O jogo destaca-se pelos seus gráficos impressionantes, escala grandiosa de combate e pela forte adrenalina no modo multijogador, mas perde alguns pontos devido ao balanceamento de progressão e à necessidade de polimento contínuo no desempenho dos servidores.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1716740/Delta_Force/" target="_blank" class="btn-steam">Gratuito na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12: 171 -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1269370/header.jpg?t=1776470506" alt="171">
+                <div class="card-body">
+                    <h4>Fallout: 171</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">171 é um jogo de ação e aventura de mundo aberto com ambientação inspirada no Brasil.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('171', 'Desenvolvido pelo estúdio brasileiro Betagames Group, 171 passa-se em uma cidade fictícia inspirada de forma marcante nos subúrbios brasileiros, repleta de referências visuais e culturais características do país (como arquitetura urbana, veículos nacionais, pedestres e trilha sonora imersiva). O jogador explora o mapa em mundo aberto, podendo conduzir veículos, interagir com o ambiente e realizar atividades livres enquanto a equipe expande continuamente o conteúdo e o modo de campanha do projeto')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('171 - Avaliações', '⭐ Nota da Crítica: 3.4 de 5 estrelas (⭐⭐⭐☆☆).  O jogo destaca-se enormemente pela iniciativa pioneira, carisma na representação da cultura brasileira e pelo enorme potencial criativo, mas ainda divide opiniões devido às limitações técnicas inerentes a produções independentes de menor orçamento e ao longo processo de desenvolvimento em acesso antecipado.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1269370/171/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 13: Mortal Kombat 11 -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/976310/header.jpg?t=1780429525" alt="Mortal Kombat 11">
+                <div class="card-body">
+                    <h4>Mortal Kombat 11</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Mortal Kombat está de volta, melhor do que nunca, em uma evolução da icônica franquia.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Mortal Kombat 11', 'Desenvolvido pela NetherRealm Studios, Mortal Kombat 11 eleva a brutalidade característica da série a um novo nível de polimento visual e mecânico. O jogo introduz o sistema de Variações de Personagem Customizáveis, permitindo aos jogadores personalizar o visual e os golpes dos lutadores favoritos. A campanha narrativa segue o confronto contra Kronika, a Guardiã do Tempo, que tenta reescrever a história do universo, unindo lutadores clássicos e novos personagens em combates cinematográficos e dinâmicos.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Mortal Kombat 11 - Avaliações', '⭐ Nota da Crítica: 4.6 de 5 estrelas (⭐⭐⭐⭐⭐).  O jogo brilha com excelência na sua apresentação visual de última geração, mecânicas de luta refinadas, grande variedade de conteúdo solo e modos online robustos, perdendo apenas mínimos pontos devido ao sistema de grind/desbloqueio de itens cosméticos que exigia muita dedicação dos jogadores nas primeiras fases.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/976310/Mortal_Kombat_11/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 14:Red Dead Redemption 2 -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961" alt="Red Dead Redemption 2">
+                <div class="card-body">
+                    <h4>Red Dead Redemption 2</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">RPG de fantasia sombria com escolhas complexas e combates táticos profundos.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Red Dead Redemption 2', 'Desenvolvido pela Rockstar Games, Red Dead Redemption 2 acompanha a história de Arthur Morgan e do bando de Van der Linde em 1899. Fugindo de agentes federais e caçadores de recompensas após um assalto gorado em Blackwater, o bando precisa assaltar, roubar e lutar pelo coração árido da América para sobreviver. O título oferece um mundo aberto de uma riqueza de detalhes espantosa, ecossistemas vivos, interações profundas com personagens e uma narrativa cinematográfica emocionante sobre o declínio da era dos foras da lei.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Red Dead Redemption 2 - Avaliações', '⭐ Nota da Crítica: 4.9 de 5 estrelas (⭐⭐⭐⭐⭐).  Uma das experiências mais imersivas e tecnologicamente avançadas da história dos videogames, aclamada pela sua história inesquecível, gráficos estonteantes e atenção incomparável aos detalhes, embora alguns críticos apontem que o ritmo inicial da campanha e a simulação realista de certas mecânicas possam exigir alguma paciência do jogador.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 15: Prison Simulator -->
+            <div class="card-jogo">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/842180/9ded3b8dfc2039f1d63627004cda84d88d7af115/header.jpg?t=1789140071" alt="Prison Simulator">
+                <div class="card-body">
+                    <h4>Prison Simulator</h4>
+                    <div class="categoria-plataforma">Plataforma: PC Windows</div>
+                    <p class="descricao-curta">Sinta o gosto da vida na prisão! Torne-se um guarda prisional e lide com detentos perigosos. Gerenciamento de prisão e muitas atividades diárias. Você se tornará o melhor guarda da história? Ou talvez se transformará no pior canalha que esta prisão já viu?.</p>
+                    <div class="botoes-card">
+                        <button class="btn-info" onclick="mostrarInfo('Prison Simulator', 'Desenvolvido pela Baked Games, Prison Simulator coloca o jogador no papel de um guarda recém-contratado numa prisão tensa e perigosa. A rotina diária inclui gerir reclusos, revistar celas em busca de contrabando, manter a ordem durante o recreio, gerir conflitos explosivos e cumprir tarefas burocráticas ou corromper-se para ganhar favores de fações criminosas internas. O jogo oferece liberdade de escolha sobre como conduzir o turno — seja cumprindo estritamente as regras ou agindo de forma corrupta.')">Ver Resumo</button>
+                        <button class="btn-info" onclick="mostrarInfo('Prison Simulator - Avaliações', '⭐ Nota da Crítica: 3.8 de 5 estrelas (⭐⭐⭐⭐☆).  O jogo destaca-se pela originalidade da premissa de ver o sistema prisional do outro lado e por momentos divertidos de exploração e caos, embora perca alguns pontos devido a alguma repetição nas tarefas diárias e a pequenos bugs técnicos de otimização.')">Ver Críticas</button>
+                        <a href="https://store.steampowered.com/app/842180/Prison_Simulator/" target="_blank" class="btn-steam">Comprar na Steam</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 WikiGames - Projeto Acadêmico para PC Windows.</p>
+        <p>&copy; 2026 PédiaGames - Projeto Acadêmico para PC Windows Criado por Leandra e Evelyn.</p>
     </footer>
     <!-- Modal Informativo -->
     <div class="modal" id="modalWiki">
