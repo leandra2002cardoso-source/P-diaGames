@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerir Jogo - PédiaGames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Pédia<span>Games</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sugestoes.html">Sugerir Jogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <div class="form-container">
+            <h2 style="color: #66c0f4; margin-bottom: 15px;">Sugerir um Novo Jogo</h2>
+            <p style="margin-bottom: 25px; color: #c7d5e0;">Conhece algum jogo de PC Windows que deveria estar na nossa enciclopédia? Envie sua sugestão preenchendo o formulário abaixo.</p>
+            
+            <form id="formSugestao" onsubmit="enviarFormulario(event)">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" required placeholder="Digite seu nome">
+
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" required placeholder="exemplo@email.com">
+
+                <label for="jogo">Nome do Jogo:</label>
+                <input type="text" id="jogo" required placeholder="Ex: Cyberpunk 2077">
+
+                <label for="motivo">Por que ele deve entrar na PédiaGames?</label>
+                <textarea id="motivo" rows="4" required placeholder="Descreva brevemente..."></textarea>
+
+                <button type="submit" class="btn-steam" style="width: 100%; padding: 12px; font-size: 16px; margin-top: 10px;">Enviar Sugestão</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 PédiaGames - Projeto Acadêmico para PC Windows Criado por Leandra e Evelyn.</p>
+    </footer>
+
+    <!-- Script de validação simples -->
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault(); // Impede a página de recarregar
+            alert("Obrigado pela sugestão! O jogo foi enviado para análise da equipe.");
+            document.getElementById('formSugestao').reset(); // Limpa os campos
+        }
+    </script>
+</body>
+</html>

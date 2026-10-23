@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopédia - PédiaGames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Pédia<span>Games</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início / Voltar para Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Enciclopédia -->
+    <div class="container">
+        <div style="background-color: #16202d; border: 1px solid #2a475e; border-radius: 4px; padding: 40px; margin-top: 20px;">
+            
+            <h2 id="tituloPagina" style="color: #66c0f4; border-bottom: 1px solid #2a475e; padding-bottom: 15px; margin-bottom: 25px; font-size: 28px;">
+                Carregando...
+            </h2>
+            
+            <p id="textoPagina" style="color: #c7d5e0; font-size: 16px; line-height: 1.8; white-space: pre-wrap; margin-bottom: 30px;">
+                Carregando informações da enciclopédia...
+            </p>
+            
+            <!-- Botão corrigido para voltar ao index.html -->
+            <button class="btn-info" onclick="window.location.href='index.html'" style="padding: 10px 20px; font-size: 14px;">
+                ⬅ Voltar para a lista
+            </button>
+            
+        </div>
+    </div>
+
+    <!-- Rodapé Original Mantido -->
+    <footer>
+        <p>&copy; 2026 PédiaGames - Projeto Acadêmico para PC Windows Criado por Leandra e Evelyn.</p>
+    </footer>
+
+    <!-- Script embutido para ler a memória e preencher esta página -->
+    <script>
+        const titulo = localStorage.getItem('tituloJogo');
+        const texto = localStorage.getItem('resumoJogo');
+
+        if (titulo && texto) {
+            document.getElementById('tituloPagina').innerText = "Enciclopédia: " + titulo;
+            document.getElementById('textoPagina').innerText = texto;
+        } else {
+            document.getElementById('tituloPagina').innerText = "Erro na Busca";
+            document.getElementById('textoPagina').innerText = "Não foi possível carregar o resumo deste jogo. Por favor, volte e tente novamente.";
+        }
+    </script>
+</body>
+</html>

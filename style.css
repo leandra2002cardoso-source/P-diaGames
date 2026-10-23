@@ -284,3 +284,38 @@ footer {
         width: 100%;
     }
 }
+/* Estilos do Formulário de Sugestões */
+.form-container {
+    background-color: #16202d;
+    border: 1px solid #2a475e;
+    border-radius: 4px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.form-container label {
+    display: block;
+    color: #66c0f4;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-container input, 
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1b2838;
+    border: 1px solid #3d6485;
+    color: white;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+.form-container input:focus, 
+.form-container textarea:focus {
+    outline: none;
+    border-color: #66c0f4;
+}
